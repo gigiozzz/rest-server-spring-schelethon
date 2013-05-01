@@ -103,11 +103,11 @@
 
 
 		<!-- VALIDATOR -->
-<!-- 		<dependency> -->
-<!--             <groupId>org.hibernate</groupId> -->
-<!--             <artifactId>hibernate-validator</artifactId> -->
-<!--             <version>4.3.0.FINAL</version> -->
-<!--         </dependency> -->
+		<dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>4.1.0.FINAL</version>
+        </dependency>
 		
 		<!-- DB dep -->
 		<!-- passato a 1.3.0 causa bug populator https://jira.springsource.org/browse/DATACMNS/fixforversion/13708 -->
