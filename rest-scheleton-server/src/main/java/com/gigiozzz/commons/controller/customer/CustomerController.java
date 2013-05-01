@@ -3,6 +3,8 @@ package com.gigiozzz.commons.controller.customer;
 import java.util.List;
 import java.util.Locale;
 
+import javax.validation.Valid;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -71,7 +73,7 @@ public class CustomerController {
 	}
 	
 	@RequestMapping(value="/save", method = RequestMethod.POST)
-	public @ResponseBody Long saveCustomerJSON(@RequestBody Customer customer) {
+	public @ResponseBody Long saveCustomerJSON(@RequestBody @Valid Customer customer) {
 		Customer result = customerService.addCustomer(customer);
 		return result.getId();
 	}
