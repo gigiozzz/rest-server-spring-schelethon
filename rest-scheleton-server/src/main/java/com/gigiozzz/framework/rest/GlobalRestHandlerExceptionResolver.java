@@ -209,7 +209,7 @@ public class GlobalRestHandlerExceptionResolver extends AbstractHandlerException
     * 
     // 400
     HttpMessageNotReadableException.class HttpStatus.BAD_REQUEST
-    MissingServletRequestParameterException.class, HttpStatus.BAD_REQUEST
+    MissingServletRequestParameterException.class, HttpStatus.BAD_REQUEST <<<<<<< utilissimo
     TypeMismatchException.class, HttpStatus.BAD_REQUEST
     "javax.validation.ValidationException", HttpStatus.BAD_REQUEST
     // 404
