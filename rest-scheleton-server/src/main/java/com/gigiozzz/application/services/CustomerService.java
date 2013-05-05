@@ -1,8 +1,7 @@
 package com.gigiozzz.application.services;
 
-import java.util.List;
-
 import com.gigiozzz.application.domain.Customer;
+import com.gigiozzz.framework.rest.RestList;
 
 
 public interface CustomerService {
@@ -10,6 +9,7 @@ public interface CustomerService {
 	public Customer addCustomer(Customer customer);
 	public Customer getCustomer(Long id);
 	public void deleteCustomer(Long id);
-	public List<Customer> litCustomers();
+	public void deleteAllCustomer();
+	public RestList<Customer> litCustomers(Integer limit,Integer offset);
 	
 }

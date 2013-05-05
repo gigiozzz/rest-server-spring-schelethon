@@ -1,0 +1,16 @@
+[ 
+  { "_class" : "com.gigiozzz.application.domain.Customer","name":"customer1"},
+	{ "_class" : "com.gigiozzz.application.domain.Customer","name":"customer2"},
+	{ "_class" : "com.gigiozzz.application.domain.Customer","name":"customer3"},
+	
+	 { "_class" : "com.gigiozzz.application.domain.RestUser",
+	 		"id":"1",
+			"firstName": "andrea",
+			"lastName": "xxxx",
+			"username":"andre",
+			"enabled":true,
+			"password": "19984dcaea13176bbb694f62ba6b5b35",
+			"roles":[{"id":"1","role":"ROLE_USER"},
+			         {"id":"2","role":"ROLE_ADMIN"}]
+		 } 	
+]
