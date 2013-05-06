@@ -109,28 +109,6 @@ public class CustomerController extends RestController<Customer> {
 		return response;
 	}
 	
-	// only for compatibility (POST ONLY)
-	// mhhh i shouldn't pass argument Customer for simple delete 
-	// BUT @RequestBody don't have required false option before spring 3.2M1
-	@RequestMapping(value="/{id}", method = RequestMethod.POST)
-	public @ResponseBody Object genericCustomerJSON(@PathVariable Long id,
-			@RequestParam("reqMethod") String method,@RequestBody @Valid Customer customer) {
-		
-		if(method.equalsIgnoreCase("PUT")){
-			return updateCustomerJSON(id, customer);
-		}
-		if(method.equalsIgnoreCase("DELETE")){
-			deleteCustomerJSON(id);
-			return new HashMap<String,Object>();
-		}
-			
-		return true;
-
-	}
-
-	
-
-	
 	@RequestMapping(value="/errortest/", method = RequestMethod.GET)
 	public @ResponseBody Customer testErrorJSON() throws Exception {
 
